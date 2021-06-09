@@ -1,0 +1,33 @@
+\documentclass[12pt,a4]{article}
+\usepackage[utf8]{inputenc} %Pacote para acentuação
+\usepackage[portuguese, brazilian]{babel}
+\usepackage[lmargin=3cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry} %Formato que lembra a ABNT
+\usepackage[T1]{fontenc} %Ajusta o texto que vem de outras fontes
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools,blindtext} %pacotes matemáticos
+
+
+\begin{document}
+\headcm \todayr
+\section{Aprendendo a criar Equaçao no \LaTeX}
+\vspace{2cm}
+\begin{center}
+
+$ 
+\left(\begin{array}{ccc}
+   \frac{1}{2} & b & x^2\\
+   c  & \sqrt{x+1} & g\\
+   \sqrt[3]{8}  & i & \displaystyle\lim_{x\rightarrow 0}f(x)
+\end{array}\right)
+$
+\end{center}
+
+\begin{equation}
+    y=x^2+1
+\end{equation}
+
+\begin{equation}
+    \int f(x)dx
+    \displaystyle\int_0^1 f(x)dx
+\end{equation}
+
+\end{document}

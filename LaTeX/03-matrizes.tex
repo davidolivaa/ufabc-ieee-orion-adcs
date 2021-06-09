@@ -1,0 +1,31 @@
+\documentclass[12pt,a4]{article}
+\usepackage[utf8]{inputenc} %Pacote para acentuação
+\usepackage[portuguese,brazilian]{babel}
+\usepackage[lmargin=3cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry} %Formato que lembra a ABNT
+\usepackage[T1]{fontenc} %Ajusta o texto que vem de outras fontes
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools,blindtext} %pacotes matemáticos
+
+\begin{document}
+\headcm \todayr
+\section{Aprendendo a criar Matriz no \LaTeX}
+
+%Comando para inserir uma Matriz 3x3 no LaTeX:
+$ 
+\left\{\begin{array}{ccc}
+   a  & b & f\\
+   c  & d & g\\
+   h  & i & j
+\end{array}\right.
+$
+
+
+
+$ % qualquer elemento matematico deve ficar dentro do cifrao
+\left(\begin{array}{ccc}
+   a  & b & f\\
+   c  & d & g\\
+   h  & i & j
+\end{array}\right) %podemos usar colchetes em vez de parenteses 
+$
+
+\end{document}

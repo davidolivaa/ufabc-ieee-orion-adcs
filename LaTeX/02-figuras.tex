@@ -1,0 +1,52 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel} 
+\usepackage[lmargin=3cm, tmargin=3cm, rmargin=2cm, bmargin=2cm]{geometry} 
+\usepackage[T1]{fontenc} 
+\usepackage{amsmath, amsthm, amsfonts, amssymb, dsfont, mathtools} 
+\usepackage{blindtext}
+\usepackage{graphicx}
+
+\begin{document}
+\maketitle
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=5cm]{ tesla.png} %insere a figura no texto
+    \caption{Logomarca Tesla}
+    \label{Fig01} %permite marcar a imagem
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=5cm]{ SpaceX-Logo.png} %insere a figura no texto
+    \caption{Logomarca SpaceX}
+    \label{Fig02} %permite marcar a imagem
+\end{figure}
+
+%com ref podemos referenciar a imagem marcada
+Figura \ref{Fig01} é a logomarca da Tesla, empresa do Elon Musk
+
+Ambas as empresas da figura \ref{Fig01} e \ref{Fig02} sao inovadoras
+
+
+% Estrutura do ambiente \minipage para quatro figuras:
+\begin{figure}
+    \begin{minipage}[!]{0.50\linewidth}
+    \includegraphics[\width=\linewidth]{tesla}\\ \textbf{ a) Tesla}
+    \end{minipage}
+    \begin{minipage}[!]{0.50\linewidth}
+    \includegraphics[\width=\linewidth]{tesla}\\ \textbf{ b) Tesla}
+    \end{minipage}
+    \begin{minipage}[!]{0.50\linewidth}
+    \includegraphics[\width=\linewidth]{tesla}\\ \textbf{ c) Tesla}
+    \end{minipage}
+    \begin{minipage}[!]{0.50\linewidth}
+    \includegraphics[\width=\linewidth]{tesla}\\ \textbf{ d) Tesla}
+    \end{minipage}
+    \caption{Figuras lado a lado}
+    \label{fig03}
+\end{figure}
+
+
+\end{document}

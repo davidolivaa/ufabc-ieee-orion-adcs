@@ -1,0 +1,37 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc} % Pacote para acentuação
+\usepackage[brazil]{babel} % Para quem vai escrever em português brasileiro
+\usepackage[lmargin=3cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry} %Formato que lembra a ABNT
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools} %pacotes matemáticos
+\usepackage{graphicx}
+\begin{document}
+
+\begin{table}
+    \centering 
+    \begin{tabular}{l|c|c|c}\hline
+    \textbf{Matérias}      & \textbf{Prova 1} & \textbf{Prova 2} & \textbf{Nota Final} \\\hline
+    Cálculo 1              &  7,5 & 7,0 & $NFC_1$\\
+    Álgebra Linear         &  8,5 & 6,0 & NFA\\
+    Química 1              &  6,5 & 6,0 & $NFQ_1$\\
+    Intro. às Engenharias  &  9,5 & 10,0& NFI\\
+    \end{tabular}\\
+    \caption{Notas nas disciplinas}
+    \label{Tab01}
+\end{table}
+
+\begin{table}[!]
+    \centering 
+    \begin{tabular}{l|c|c|c}\hline
+    \textbf{Matérias}      & \textbf{Prova 1} & \textbf{Prova 2} & \textbf{Nota Final} \\\hline
+    Cálculo 1              &  7,5 & 7,0 & $NFC_1$\\
+    Álgebra Linear         &  8,5 & 6,5 & NFA\\
+    Química 1              &  6,5 & 5,0 & $NFQ_1$\\
+    Intro. às Engenharias  &  9,0 & 10,0& NFI\\
+    \end{tabular}\\
+    \caption{Notas atualizadas nas disciplinas}
+    \label{Tab02}
+\end{table}
+
+A tabela \ref{Tab02} esta mais atualizada que a tabela \ref{Tab01}
+
+\end{document}
